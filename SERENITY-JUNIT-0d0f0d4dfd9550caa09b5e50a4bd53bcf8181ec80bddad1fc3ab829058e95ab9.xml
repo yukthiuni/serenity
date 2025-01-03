@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Delete User" skipped="0" tests="1" time="34.8" timestamp="2025-01-04 01:28:55"><testcase name="Delete user"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+pages.UserManagementPage.checkUsername(UserManagementPage.java:48)&#13;
+steps.UserManagementPageStepLibrary.checkUsername(UserManagementPageStepLibrary.java:26)&#13;
+tests.AddUserStepDefinitions.user_can_see_user(AddUserStepDefinitions.java:92)&#13;
+✽.User can see user "JohnAk"(classpath:features/DeleteUser.feature:16)&#13;
+</system-err></testcase></testsuite>

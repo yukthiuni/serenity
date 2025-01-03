@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Submit a Claim" skipped="0" tests="4" time="124.04" timestamp="2025-01-04 01:33:49"><testcase name="Add expenses and submit"/><testcase name="Submit a claim without adding expenses"><failure message="The claim was submitted without adding expenses, and the required message is missing." type="java.lang.AssertionError">The claim was submitted without adding expenses, and the required message is missing.</failure><system-err>The claim was submitted without adding expenses, and the required message is missing.&#13;
+pages.OrangeHrmViewClaimPage.verifyRequiredMessage(OrangeHrmViewClaimPage.java:129)&#13;
+pages.ViewClaimPageStepLibrary.verifyExpenseFieldRequiredMessage(ViewClaimPageStepLibrary.java:71)&#13;
+stepdefinitions.SubmitClaimStepDefinitions.theUserShouldSeeARequiredMessageUnderTheExpensesField(SubmitClaimStepDefinitions.java:66)&#13;
+✽.the user should see a required message under the Expenses field(classpath:features/SubmitClaim.feature:40)&#13;
+</system-err></testcase></testsuite>

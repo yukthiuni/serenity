@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Add Candidate" skipped="0" tests="2" time="57.93" timestamp="2025-01-04 01:20:41"><testcase name="Add Candidate after filling all mandatory fields"/><testcase name="Add Candidate without filling mandatory fields"/></testsuite>

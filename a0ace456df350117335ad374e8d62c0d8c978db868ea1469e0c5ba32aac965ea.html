@@ -190,7 +190,7 @@
         <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
         <div id="projectname-banner" style="float:right">
             <span class="projectname">
-                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projecttitle">Serenity and Cucumber Quick Start</span>
                 <span class="projectsubtitle"></span>
             </span>
         </div>
@@ -225,7 +225,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 03-01-2025 14:28:01</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 04-01-2025 01:37:11</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -240,7 +240,7 @@
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
                                 <div class="test-count-title">
-                                    6 tests
+                                    8 tests
 
                                      |
                                         <a href="results.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
@@ -313,60 +313,60 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>6</td>
+                    <td>8</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>6</td>
+                    <td>8</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jan 03, 2025 14:27:50</td>
+                    <td>Jan 04, 2025 01:22:39</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jan 03, 2025 14:27:52</td>
+                    <td>Jan 04, 2025 01:36:55</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>2s</td>
+                    <td> 14m 16s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>217ms</td>
+                    <td>19s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>522ms</td>
+                    <td>36s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>335ms</td>
+                    <td>29s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>2s</td>
+                    <td> 3m 55s</td>
                 </tr>
                 </tbody>
             </table>
@@ -398,55 +398,39 @@
                                                                         <tbody>
                                                                                 <tr>
                                                                                     <td>
-                                                                                            <a href="e1b0ae1fdf8ded3dddaf0e645baf79575b67f352216fd8c97e005b2f6b326efd.html"> Create a Book</a>
+                                                                                            <a href="0bcdf25e91de4eabb315fe20401ffc925fd858b38c759a379d75f7485a89b330.html"> Add Emergency Contacts in My Info</a>
                                                                                     </td>
-                                                                                    <td>6</td>
-                                                                                    <td>Given the user is logged in with username: "admin" and password: "password" for CREATE
-authenticate with username: admin and password: password for CREATE
-When user sends a request to create a book with title - "" and author - ""
-post the book
-POST http://localhost:7081/api/books
-Then the response status code should be 400
-Verify status code as 400
-Given the user is logged in with username: "user" and password: "password" for CREATE
-authenticate with username: user and password: password for CREATE
-When user posts the book details author "Fyodar Dhosteyoski"
-post the book
-POST http://localhost:7081/api/books
-Then user gets 400 code
-Verify status code as 400
-Given the user is logged in with username: "user" and password: "password" for CREATE
-authenticate with username: user and password: password for CREATE
-When user posts the book details title "the gambler 3"
-post the book
-POST http://localhost:7081/api/books
-Then user gets 400 code
-Verify status code as 400
-Given the user is logged in with username: "user" and password: "password" for CREATE
-authenticate with username: user and password: password for CREATE
-When user posts the book details title "the gambler 2" and author "Fyodar 2" and Id 14
-post the book
-POST http://localhost:7081/api/books
-Then user gets 201 code
-Verify status code as 201
-Then user gets the book with title "the gambler 2" and author "Fyodar 2" and id 14 as response
-response contains the book
-Given the user is logged in with username: "user" and password: "password" for CREATE
-authenticate with username: user and password: password for CREATE
-When user sends a request to create a book with title - "Silent" and invalid author - 89756
-Create a book with an invalid author
-POST http://localhost:7081/api/books
-Then the response status code should be 400
-Verify status code as 400
-Given the user is logged in with username: "user" and password: "password" for CREATE
-authenticate with username: user and password: password for CREATE
-When user sends a request to create a book with invalid title - 12345 and author - "Alex Michaelides"
-Create a book with an invalid title
-POST http://localhost:7081/api/books
-Then the response status code should be 400
-Verify status code as 400
+                                                                                    <td>1</td>
+                                                                                    <td>Given user is on home page
+Opening Page
+When user enters "Admin" as username
+Entering username as Admin
+And user enters "admin123" as password
+Entering password as admin123
+Clicking Login Button
+Then user should be on dashboard page
+verify is on dashboard page
+Given the user navigates to the "My Info" tab
+navigate to My Info tab
+Then the user should be on the My Info page
+verify is on my info page
+Given the user navigates to "Emergency Contacts" section
+navigate to section Emergency Contacts
+Then the user should be on the "Emergency Contacts" section
+verify on Emergency Contacts section
+When the user clicks on the "Add" button in "Assigned Emergency Contacts" space
+clicks on Add button in the Assigned Emergency Contacts space
+Then the user should be on the "Save Emergency Contact" section
+verify on Save Emergency Contact section
+When the user enter the emergency contact details by typing values - "Name:123, Relationship:555, Mobile:0112536425"
+fill input fields having labels with values - Name:123, Relationship:555, Mobile:0112536425
+And the user clicks on the "Save" button
+click on the button having label Save
+Then the user should see input validation error messages
+check if there's any input validations errors
+And the user should see a record with "Kamal"
 </td>
-                                                                                    <td>6</td>
+                                                                                    <td>1</td>
                                                                                     <td>0%</td>
                                                                                     <td>
                                                                                             <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
@@ -456,7 +440,367 @@ Verify status code as 400
                                                                                                 <div class="progress-bar"
                                                                                                      role="progressbar"
                                                                                                      style="width: 100%; background-color: #fd938e"
-                                                                                                     aria-valuenow="6"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% failure"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="38e8a505f2a023036c1e3fe47847e97674995b3b47d511ccd245a225bd8bbd8c.html"> Add User</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>Given user is on home page
+Opening Page
+When user enters "Admin" as username
+Entering username as Admin
+And user enters "admin123" as password
+Entering password as admin123
+Clicking Login Button
+Then user should be on dashboard page
+verify is on dashboard page
+Given User is on the Admin User Management page
+Navigating to user management page
+And User clicks on the Add button in user management
+Clicking user add button
+And User is navigated to the Add User page
+Verify current page
+And User fills the user role "Admin" and employee name "James Butler" and status "Enabled" and username "JamesBu" and password "JamesB@12" and confirm password as "JamesB@12"
+Filling user role as Admin
+Filling employee name as James Butler
+Filling status name as Enabled
+Filling username name as JamesBu
+Filling password as JamesB@12
+Filling confirm password as JamesB@12
+When User clicks the submit button in user management
+Click submit button
+Then User is directed to the view user page
+Verify current page
+Then User can see user "JamesBu"
+</td>
+                                                                                    <td>1</td>
+                                                                                    <td>0%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #fd938e"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% failure"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="f5c7de467fdc1cebd56ff8fb2834c5362b14835ed5e4089c2b82ceca3ae2adc9.html"> Comment Buzz post</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>Given user is on home page
+Opening Page
+When user enters "Admin" as username
+Entering username as Admin
+And user enters "admin123" as password
+Entering password as admin123
+Clicking Login Button
+Then user should be on dashboard page
+verify is on dashboard page
+Given user is on buzz page
+Open buzz page
+When user types "this is a new post for testing on 8423455" on post input field
+Type into post: this is a new post for testing on 8423455
+And user clicks on the post button
+Click post button
+Then user can see the post with content "this is a new post for testing on 8423455"
+Verify post available: this is a new post for testing on 8423455
+When user clicks on the comment button of the post with content "this is a new post for testing on 8423455"
+Click comment button: this is a new post for testing on 8423455
+And user types the comment "Nice work" and Enter for the post "this is a new post for testing on 8423455"
+Then user can see the comment "Nice work" for the post "this is a new post for testing on 8423455"
+</td>
+                                                                                    <td>1</td>
+                                                                                    <td>0%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #fd938e"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% failure"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="6c4d2ae17ffea2405b3833f12183e6df85a928d44913d5b129320de865fcf45a.html"> Delete Emergency Contacts in My Info</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>Given user is on home page
+Opening Page
+When user enters "Admin" as username
+Entering username as Admin
+And user enters "admin123" as password
+Entering password as admin123
+Clicking Login Button
+Then user should be on dashboard page
+verify is on dashboard page
+Given the user navigates to the "My Info" tab
+navigate to My Info tab
+Then the user should be on the My Info page
+verify is on my info page
+Given the user navigates to "Emergency Contacts" section
+navigate to section Emergency Contacts
+Then the user should be on the "Emergency Contacts" section
+verify on Emergency Contacts section
+Given the user clicks on the "Add" button in "Assigned Emergency Contacts" space
+clicks on Add button in the Assigned Emergency Contacts space
+Then the user should be on the "Save Emergency Contact" section
+verify on Save Emergency Contact section
+Given the user enter the emergency contact details by typing values - "Name:Sunil, Relationship:Uncle, Mobile:0112536425"
+fill input fields having labels with values - Name:Sunil, Relationship:Uncle, Mobile:0112536425
+And the user clicks on the "Save" button
+click on the button having label Save
+Then the user should see a record with "Sunil"
+check if a record is available with value Sunil
+When the user clicks on the "Delete" icon button in the row with "Sunil"
+Then the user should see a prompt asking "Are you Sure?"
+When the user clicks on the "Yes, Delete" button
+And the user should not see a record with "Sunil"
+</td>
+                                                                                    <td>1</td>
+                                                                                    <td>0%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #fd938e"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% failure"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="d18eb91249e8fb136e1f4d9863aae06a945a80ce19735351e88d3b005854a45e.html"> Delete User</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>Given user is on home page
+Opening Page
+When user enters "Admin" as username
+Entering username as Admin
+And user enters "admin123" as password
+Entering password as admin123
+Clicking Login Button
+Then user should be on dashboard page
+verify is on dashboard page
+Given User is on the Admin User Management page
+Navigating to user management page
+And User clicks on the Add button in user management
+Clicking user add button
+And User is navigated to the Add User page
+Verify current page
+And User fills the user role "Admin" and employee name "John Doe" and status "Enabled" and username "JohnAk" and password "Ran@123" and confirm password as "Ran@123"
+Filling user role as Admin
+Filling employee name as John Doe
+Filling status name as Enabled
+Filling username name as JohnAk
+Filling password as Ran@123
+Filling confirm password as Ran@123
+When User clicks the submit button in user management
+Click submit button
+Given User is on the Admin User Management page
+Navigating to user management page
+Then User can see user "JohnAk"
+Check user by username as JohnAk
+When User clicks on the Delete button of "JohnAk"
+When User clicks on the confirm button in user management
+Then User cannot see "JohnAk"
+</td>
+                                                                                    <td>1</td>
+                                                                                    <td>0%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #fd938e"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% failure"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="27f82bc6ae9beac65c839c5e82fd3e26cf8dd4543adb5e0bdae533c34dd44f50.html"> Search Candidate</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>Given user is on home page
+Opening Page
+When user enters "Admin" as username
+Entering username as Admin
+And user enters "admin123" as password
+Entering password as admin123
+Clicking Login Button
+Then user should be on dashboard page
+verify is on dashboard page
+Given User is on the Recruitment Candidates page
+Open candidates page
+And User clicks on the Add button
+Click add candidate button
+And User is navigated to the Add Candidate page
+Verify add candidate page
+And User fills the first name "Nuwa333" and last name "Kum333" and email as "nuwa333@gmail.com"
+Fill first name: Nuwa333
+Fill last name: Kum333
+Fill email: nuwa333@gmail.com
+When User clicks the submit button
+Click submit
+Then User is directed to the view candidate page
+Verify current page
+Then User can see candidate "Nuwa333" "Kum333"
+Check for candidate name: Nuwa333, Kum333
+Given User is on the Recruitment Candidates page
+Open candidates page
+When User types "Nuwa333 Kum333" in the search box
+Type into search box: Nuwa333 Kum333
+Then User see the "Nuwa333" "Kum333" dropdown item
+Verify search drop down item exists: Nuwa333, Kum333
+And User clicks the dropdown item "Nuwa333" "Kum333"
+When User clicks the Search button
+Then User can see only "Nuwa333" "Kum333" in Candidates table
+</td>
+                                                                                    <td>1</td>
+                                                                                    <td>0%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #fd938e"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% failure"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="0a0e43d84f2ec200fcedbbbaf2c6b5c6611434b014afe35c5c444a9a508aa186.html"> Submit a Claim</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>Given user is logged in as an Admin
+Given the user is on the Claims Page
+Open claims page
+When the user clicks the Submit Claim button
+Click submit claim button
+And the user is navigated to the Submit Claim page
+Verify submit claim page
+And the user selects the Event "Medical Reimbursement"
+Select event: Medical Reimbursement
+And the user selects the Currency "United States Dollar"
+Select currency: United States Dollar
+And the user enters Remarks "Hospital Stay"
+Enter remarks: Hospital Stay
+And the user clicks the Create button
+Click create button
+Then the user is directed to the View Claim page
+Verify navigate to view claim page
+And the user should see the claim details Event "Medical Reimbursement" and Currency "United States Dollar" and Remarks "Hospital Stay"
+Verify claim details: Medical Reimbursement, United States Dollar, Hospital Stay
+Given the user is directed to the View Claim page
+Verify navigate to view claim page
+When the user clicks the Submit button
+Click submit button
+Then the user should see a required message under the Expenses field
+Verify expense field required message
+</td>
+                                                                                    <td>1</td>
+                                                                                    <td>0%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #fd938e"
+                                                                                                     aria-valuenow="1"
+                                                                                                     title="100% failure"
+                                                                                                     aria-valuemin="0"
+                                                                                                     aria-valuemax="100">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                            <a href="0a63d46565faf6e215dc9d24ed0faa0f3dd52b339b01ad98bb8b5e89df92f3dd.html"> Update Contact Details In My Info</a>
+                                                                                    </td>
+                                                                                    <td>1</td>
+                                                                                    <td>Given user is on home page
+Opening Page
+When user enters "Admin" as username
+Entering username as Admin
+And user enters "admin123" as password
+Entering password as admin123
+Clicking Login Button
+Then user should be on dashboard page
+verify is on dashboard page
+Given the user navigates to the "My Info" tab
+navigate to My Info tab
+Then the user should be on the My Info page
+verify is on my info page
+Given the user navigates to "Contact Details" section
+navigate to section Contact Details
+Then the user should be on the "Contact Details" section
+verify on Contact Details section
+When the user enter the contact details by typing values - "City:15145, State/Province:64655, Zip/Postal Code:test"
+fill input fields having labels with values - City:15145, State/Province:64655, Zip/Postal Code:test
+And the user clicks on the "Save" button
+click on the button having label Save
+Then the user should see input validation error messages
+check if there's any input validations errors
+</td>
+                                                                                    <td>1</td>
+                                                                                    <td>0%</td>
+                                                                                    <td>
+                                                                                            <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="progress">
+                                                                                                <div class="progress-bar"
+                                                                                                     role="progressbar"
+                                                                                                     style="width: 100%; background-color: #fd938e"
+                                                                                                     aria-valuenow="1"
                                                                                                      title="100% failure"
                                                                                                      aria-valuemin="0"
                                                                                                      aria-valuemax="100">
@@ -484,7 +828,7 @@ Verify status code as 400
                                                                             <a href="a0ace456df350117335ad374e8d62c0d8c978db868ea1469e0c5ba32aac965ea.html"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> Assertion error</a>
                                                                         </td>
                                                                         <td><span
-                                                                                    class="badge failure-badge">6</span>
+                                                                                    class="badge failure-badge">8</span>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -496,7 +840,39 @@ Verify status code as 400
                                                                 <tbody>
                                                                     <tr>
                                                                         <td class="failure-color top-list-title">
-                                                                            <a href="e1b0ae1fdf8ded3dddaf0e645baf79575b67f352216fd8c97e005b2f6b326efd.html">Create a Book</a>
+                                                                            <a href="0bcdf25e91de4eabb315fe20401ffc925fd858b38c759a379d75f7485a89b330.html">Add Emergency Contacts in My Info</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="badge failure-badge">100%</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="38e8a505f2a023036c1e3fe47847e97674995b3b47d511ccd245a225bd8bbd8c.html">Add User</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="badge failure-badge">100%</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="f5c7de467fdc1cebd56ff8fb2834c5362b14835ed5e4089c2b82ceca3ae2adc9.html">Comment Buzz post</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="badge failure-badge">100%</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="6c4d2ae17ffea2405b3833f12183e6df85a928d44913d5b129320de865fcf45a.html">Delete Emergency Contacts in My Info</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="badge failure-badge">100%</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="failure-color top-list-title">
+                                                                            <a href="d18eb91249e8fb136e1f4d9863aae06a945a80ce19735351e88d3b005854a45e.html">Delete User</a>
                                                                         </td>
                                                                         <td>
                                                                             <span class="badge failure-badge">100%</span>
@@ -508,6 +884,23 @@ Verify status code as 400
                                                     </div>
                                             </div>
                                             <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Context</h5>
+                            <div>
+                                    <a href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">
+                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chrome, Windows&nbsp;&nbsp;&nbsp;8
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
                                             </div>
                                         </div>
                                         <div id="tests" class="tab-pane fade">
@@ -523,22 +916,22 @@ Verify status code as 400
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>6</td>
+                    <td>8</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>2s</td>
+                    <td> 14m 16s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>6</td>
+                    <td>8</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>217ms</td>
+                    <td>19s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -549,30 +942,30 @@ Verify status code as 400
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>522ms</td>
+                    <td>36s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jan 03, 2025 14:27:50</td>
+                    <td>Jan 04, 2025 01:22:39</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>335ms</td>
+                    <td>29s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jan 03, 2025 14:27:52</td>
+                    <td>Jan 04, 2025 01:36:55</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>2s</td>
+                    <td> 3m 55s</td>
                 </tr>
                 </tbody>
             </table>
@@ -597,121 +990,244 @@ Verify status code as 400
                                                                 <tbody>
                                                                     <tr class="scenario-result FAILURE">
                                                                         <td>
-                                                                                <a href="e1b0ae1fdf8ded3dddaf0e645baf79575b67f352216fd8c97e005b2f6b326efd.html">Create a Book</a>
+                                                                                <a href="0bcdf25e91de4eabb315fe20401ffc925fd858b38c759a379d75f7485a89b330.html">Add Emergency Contacts in My Info</a>
                                                                         </td>
-                                                                        <td data-order="Attempt to create a book with empty title and author fields">
-                                                                                    <a href="4443a44b3f4e8eacfdd7d746db69b9366a805885cc6649a19e0685389b018aaf.html">Attempt to create a book with empty title and author fields</a>
+                                                                        <td data-order="User tries to add emergency contact by filling required values with invalid input">
+                                                                                    <a href="3978d3486acd155c014ed8536a41a596cac0ce6a4402ad0c5a1408b742701e45.html">User tries to add emergency contact by filling required values with invalid input</a>
                                                                         </td>
-                                                                        <td><span style="display:none"></span>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
                                                                         </td>
-                                                                        <td>3</td>
-                                                                        <td>Given the user is logged in with username: "admin" and password: "password" for CREATE
-When user sends a request to create a book with title - "" and author - ""
-Then the response status code should be 400
+                                                                        <td>14</td>
+                                                                        <td>Given user is on home page
+When user enters "Admin" as username
+And user enters "admin123" as password
+Then user should be on dashboard page
+Given the user navigates to the "My Info" tab
+Then the user should be on the My Info page
+Given the user navigates to "Emergency Contacts" section
+Then the user should be on the "Emergency Contacts" section
+When the user clicks on the "Add" button in "Assigned Emergency Contacts" space
+Then the user should be on the "Save Emergency Contact" section
+When the user enter the emergency contact details by typing values - "Name:123, Relationship:555, Mobile:0112536425"
+And the user clicks on the "Save" button
+Then the user should see input validation error messages
+And the user should see a record with "Kamal"
 </td>
-                                                                        <td data-order="1735894670">14:27:50</td>
-                                                                        <td>519ms</td>
+                                                                        <td data-order="1735933959">01:22:39</td>
+                                                                        <td>29s 340ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
                                                                                     style="display:none">FAILURE</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr class="scenario-result FAILURE">
                                                                         <td>
-                                                                                <a href="e1b0ae1fdf8ded3dddaf0e645baf79575b67f352216fd8c97e005b2f6b326efd.html">Create a Book</a>
+                                                                                <a href="38e8a505f2a023036c1e3fe47847e97674995b3b47d511ccd245a225bd8bbd8c.html">Add User</a>
                                                                         </td>
-                                                                        <td data-order="Create a book with missing values title">
-                                                                                    <a href="48626b194014010cf6ce21a9a230cdfb087e943d3053a2b7b7e8750930a5a9a0.html">Create a book with missing values title</a>
+                                                                        <td data-order="Add User by Entering Valid Values">
+                                                                                    <a href="7701c8844181a49c0f25c589c07e635569af928f39962d4b353c524d4b898818.html">Add User by Entering Valid Values</a>
                                                                         </td>
-                                                                        <td><span style="display:none"></span>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
                                                                         </td>
-                                                                        <td>3</td>
-                                                                        <td>Given the user is logged in with username: "user" and password: "password" for CREATE
-When user posts the book details author "Fyodar Dhosteyoski"
-Then user gets 400 code
+                                                                        <td>11</td>
+                                                                        <td>Given user is on home page
+When user enters "Admin" as username
+And user enters "admin123" as password
+Then user should be on dashboard page
+Given User is on the Admin User Management page
+And User clicks on the Add button in user management
+And User is navigated to the Add User page
+And User fills the user role "Admin" and employee name "James Butler" and status "Enabled" and username "JamesBu" and password "JamesB@12" and confirm password as "JamesB@12"
+When User clicks the submit button in user management
+Then User is directed to the view user page
+Then User can see user "JamesBu"
 </td>
-                                                                        <td data-order="1735894671">14:27:51</td>
-                                                                        <td>274ms</td>
+                                                                        <td data-order="1735934016">01:23:36</td>
+                                                                        <td>32s 294ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
                                                                                     style="display:none">FAILURE</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr class="scenario-result FAILURE">
                                                                         <td>
-                                                                                <a href="e1b0ae1fdf8ded3dddaf0e645baf79575b67f352216fd8c97e005b2f6b326efd.html">Create a Book</a>
+                                                                                <a href="f5c7de467fdc1cebd56ff8fb2834c5362b14835ed5e4089c2b82ceca3ae2adc9.html">Comment Buzz post</a>
                                                                         </td>
-                                                                        <td data-order="Create a book with missing values author">
-                                                                                    <a href="faf9a490666746dd7ef5a25186dcff3b582e427f9510cfe48b1555f8702cb35b.html">Create a book with missing values author</a>
+                                                                        <td data-order="Add a comment to a post">
+                                                                                    <a href="87afb8258687718b86cdfa219a7c2223c1e8b69f6d1db9c14e0c9f6c611abe83.html">Add a comment to a post</a>
                                                                         </td>
-                                                                        <td><span style="display:none"></span>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
                                                                         </td>
-                                                                        <td>3</td>
-                                                                        <td>Given the user is logged in with username: "user" and password: "password" for CREATE
-When user posts the book details title "the gambler 3"
-Then user gets 400 code
+                                                                        <td>11</td>
+                                                                        <td>Given user is on home page
+When user enters "Admin" as username
+And user enters "admin123" as password
+Then user should be on dashboard page
+Given user is on buzz page
+When user types "this is a new post for testing on 8423455" on post input field
+And user clicks on the post button
+Then user can see the post with content "this is a new post for testing on 8423455"
+When user clicks on the comment button of the post with content "this is a new post for testing on 8423455"
+And user types the comment "Nice work" and Enter for the post "this is a new post for testing on 8423455"
+Then user can see the comment "Nice work" for the post "this is a new post for testing on 8423455"
 </td>
-                                                                        <td data-order="1735894671">14:27:51</td>
-                                                                        <td>217ms</td>
+                                                                        <td data-order="1735934102">01:25:02</td>
+                                                                        <td>19s 460ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
                                                                                     style="display:none">FAILURE</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr class="scenario-result FAILURE">
                                                                         <td>
-                                                                                <a href="e1b0ae1fdf8ded3dddaf0e645baf79575b67f352216fd8c97e005b2f6b326efd.html">Create a Book</a>
+                                                                                <a href="6c4d2ae17ffea2405b3833f12183e6df85a928d44913d5b129320de865fcf45a.html">Delete Emergency Contacts in My Info</a>
                                                                         </td>
-                                                                        <td data-order="Create book correctly with given Id">
-                                                                                    <a href="48e0be63c25ef545a14be0a8a57f6f3aeed626134c5cee2c8618e91dab80491b.html">Create book correctly with given Id</a>
+                                                                        <td data-order="User successfully deletes an emergency contact">
+                                                                                    <a href="2b141c5d3a9af259dde542955b3a6cf6e50cf06bbdc8fdb66ce06c02b2903316.html">User successfully deletes an emergency contact</a>
                                                                         </td>
-                                                                        <td><span style="display:none"></span>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
                                                                         </td>
-                                                                        <td>4</td>
-                                                                        <td>Given the user is logged in with username: "user" and password: "password" for CREATE
-When user posts the book details title "the gambler 2" and author "Fyodar 2" and Id 14
-Then user gets 201 code
-Then user gets the book with title "the gambler 2" and author "Fyodar 2" and id 14 as response
+                                                                        <td>17</td>
+                                                                        <td>Given user is on home page
+When user enters "Admin" as username
+And user enters "admin123" as password
+Then user should be on dashboard page
+Given the user navigates to the "My Info" tab
+Then the user should be on the My Info page
+Given the user navigates to "Emergency Contacts" section
+Then the user should be on the "Emergency Contacts" section
+Given the user clicks on the "Add" button in "Assigned Emergency Contacts" space
+Then the user should be on the "Save Emergency Contact" section
+Given the user enter the emergency contact details by typing values - "Name:Sunil, Relationship:Uncle, Mobile:0112536425"
+And the user clicks on the "Save" button
+Then the user should see a record with "Sunil"
+When the user clicks on the "Delete" icon button in the row with "Sunil"
+Then the user should see a prompt asking "Are you Sure?"
+When the user clicks on the "Yes, Delete" button
+And the user should not see a record with "Sunil"
 </td>
-                                                                        <td data-order="1735894671">14:27:51</td>
-                                                                        <td>522ms</td>
+                                                                        <td data-order="1735934269">01:27:49</td>
+                                                                        <td>29s 675ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
                                                                                     style="display:none">FAILURE</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr class="scenario-result FAILURE">
                                                                         <td>
-                                                                                <a href="e1b0ae1fdf8ded3dddaf0e645baf79575b67f352216fd8c97e005b2f6b326efd.html">Create a Book</a>
+                                                                                <a href="d18eb91249e8fb136e1f4d9863aae06a945a80ce19735351e88d3b005854a45e.html">Delete User</a>
                                                                         </td>
-                                                                        <td data-order="Invalid data type for author in the payload">
-                                                                                    <a href="553f07cce47007d0516b5841e6aa504c912b429424e26f465e51a73134ea17c1.html">Invalid data type for author in the payload</a>
+                                                                        <td data-order="Delete user">
+                                                                                    <a href="0d0f0d4dfd9550caa09b5e50a4bd53bcf8181ec80bddad1fc3ab829058e95ab9.html">Delete user</a>
                                                                         </td>
-                                                                        <td><span style="display:none"></span>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
                                                                         </td>
-                                                                        <td>3</td>
-                                                                        <td>Given the user is logged in with username: "user" and password: "password" for CREATE
-When user sends a request to create a book with title - "Silent" and invalid author - 89756
-Then the response status code should be 400
+                                                                        <td>14</td>
+                                                                        <td>Given user is on home page
+When user enters "Admin" as username
+And user enters "admin123" as password
+Then user should be on dashboard page
+Given User is on the Admin User Management page
+And User clicks on the Add button in user management
+And User is navigated to the Add User page
+And User fills the user role "Admin" and employee name "John Doe" and status "Enabled" and username "JohnAk" and password "Ran@123" and confirm password as "Ran@123"
+When User clicks the submit button in user management
+Given User is on the Admin User Management page
+Then User can see user "JohnAk"
+When User clicks on the Delete button of "JohnAk"
+When User clicks on the confirm button in user management
+Then User cannot see "JohnAk"
 </td>
-                                                                        <td data-order="1735894672">14:27:52</td>
-                                                                        <td>247ms</td>
+                                                                        <td data-order="1735934335">01:28:55</td>
+                                                                        <td>34s 801ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
                                                                                     style="display:none">FAILURE</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr class="scenario-result FAILURE">
                                                                         <td>
-                                                                                <a href="e1b0ae1fdf8ded3dddaf0e645baf79575b67f352216fd8c97e005b2f6b326efd.html">Create a Book</a>
+                                                                                <a href="27f82bc6ae9beac65c839c5e82fd3e26cf8dd4543adb5e0bdae533c34dd44f50.html">Search Candidate</a>
                                                                         </td>
-                                                                        <td data-order="Invalid data type for title in the payload">
-                                                                                    <a href="92240b3514b5bf353a9d3b8db9d2a3ff4af455626bcbd1579dcb56b647f8852f.html">Invalid data type for title in the payload</a>
+                                                                        <td data-order="Search available Candidate">
+                                                                                    <a href="6cf50f33e0881ac5f8d75564ab4053dda79234aecd0bb0fa0bde7a2a1b396705.html">Search available Candidate</a>
                                                                         </td>
-                                                                        <td><span style="display:none"></span>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
                                                                         </td>
-                                                                        <td>3</td>
-                                                                        <td>Given the user is logged in with username: "user" and password: "password" for CREATE
-When user sends a request to create a book with invalid title - 12345 and author - "Alex Michaelides"
-Then the response status code should be 400
+                                                                        <td>17</td>
+                                                                        <td>Given user is on home page
+When user enters "Admin" as username
+And user enters "admin123" as password
+Then user should be on dashboard page
+Given User is on the Recruitment Candidates page
+And User clicks on the Add button
+And User is navigated to the Add Candidate page
+And User fills the first name "Nuwa333" and last name "Kum333" and email as "nuwa333@gmail.com"
+When User clicks the submit button
+Then User is directed to the view candidate page
+Then User can see candidate "Nuwa333" "Kum333"
+Given User is on the Recruitment Candidates page
+When User types "Nuwa333 Kum333" in the search box
+Then User see the "Nuwa333" "Kum333" dropdown item
+And User clicks the dropdown item "Nuwa333" "Kum333"
+When User clicks the Search button
+Then User can see only "Nuwa333" "Kum333" in Candidates table
 </td>
-                                                                        <td data-order="1735894672">14:27:52</td>
-                                                                        <td>232ms</td>
+                                                                        <td data-order="1735934534">01:32:14</td>
+                                                                        <td>36s 326ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
+                                                                                    style="display:none">FAILURE</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result FAILURE">
+                                                                        <td>
+                                                                                <a href="0a0e43d84f2ec200fcedbbbaf2c6b5c6611434b014afe35c5c444a9a508aa186.html">Submit a Claim</a>
+                                                                        </td>
+                                                                        <td data-order="Submit a claim without adding expenses">
+                                                                                    <a href="aa480aba116921a6b0c13846fa1c77de54d07a9bb135965605c17bc30ce2dba8.html">Submit a claim without adding expenses</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>13</td>
+                                                                        <td>Given user is logged in as an Admin
+Given the user is on the Claims Page
+When the user clicks the Submit Claim button
+And the user is navigated to the Submit Claim page
+And the user selects the Event "Medical Reimbursement"
+And the user selects the Currency "United States Dollar"
+And the user enters Remarks "Hospital Stay"
+And the user clicks the Create button
+Then the user is directed to the View Claim page
+And the user should see the claim details Event "Medical Reimbursement" and Currency "United States Dollar" and Remarks "Hospital Stay"
+Given the user is directed to the View Claim page
+When the user clicks the Submit button
+Then the user should see a required message under the Expenses field
+</td>
+                                                                        <td data-order="1735934728">01:35:28</td>
+                                                                        <td>25s 271ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
+                                                                                    style="display:none">FAILURE</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result FAILURE">
+                                                                        <td>
+                                                                                <a href="0a63d46565faf6e215dc9d24ed0faa0f3dd52b339b01ad98bb8b5e89df92f3dd.html">Update Contact Details In My Info</a>
+                                                                        </td>
+                                                                        <td data-order="User tries to update contact details with invalid input">
+                                                                                    <a href="5d58dd2a48f75c865f0d16ce58a6fcc77a8b1b7d6ba8e2272692a05cdb3ea66b.html">User tries to update contact details with invalid input</a>
+                                                                        </td>
+                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-windows' title='Windows'></i></span><span style="display:none">Chrome,windows</span>
+                                                                        </td>
+                                                                        <td>11</td>
+                                                                        <td>Given user is on home page
+When user enters "Admin" as username
+And user enters "admin123" as password
+Then user should be on dashboard page
+Given the user navigates to the "My Info" tab
+Then the user should be on the My Info page
+Given the user navigates to "Contact Details" section
+Then the user should be on the "Contact Details" section
+When the user enter the contact details by typing values - "City:15145, State/Province:64655, Zip/Postal Code:test"
+And the user clicks on the "Save" button
+Then the user should see input validation error messages
+</td>
+                                                                        <td data-order="1735934786">01:36:26</td>
+                                                                        <td>28s 523ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
                                                                                     style="display:none">FAILURE</span>
                                                                         </td>
@@ -732,6 +1248,23 @@ Then the response status code should be 400
                                                 </div>
                                             </div>
                                             <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                                <h5 class="card-title">Context</h5>
+                            <div>
+                                    <a href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">
+                                    <span class="tag-badge badge" style="background-color:#fd938e; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Chrome, Windows&nbsp;&nbsp;&nbsp;8
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
                                             </div>
                                         </div>
 
@@ -778,7 +1311,7 @@ Then the response status code should be 400
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [0,0,0,0,0,6,0,0],
+                data: [0,0,0,0,0,8,0,0],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -874,7 +1407,7 @@ Then the response status code should be 400
             datasets: [
                 {
                     label: 'Automated',
-                    data: [0,0,0,0,0,6,0,0],
+                    data: [0,0,0,0,0,8,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -957,7 +1490,7 @@ Then the response status code should be 400
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['6','0','0','0','0','0','0','0'],
+                data: ['0','0','5','3','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
@@ -1020,54 +1553,96 @@ Then the response status code should be 400
 
         const coverageReports = [
             {
-                title: 'Create a Book',
+                title: 'Add Emergency Contacts in My Info',
                 result: 'FAILURE',
-                link: "e1b0ae1fdf8ded3dddaf0e645baf79575b67f352216fd8c97e005b2f6b326efd.html"
+                link: "0bcdf25e91de4eabb315fe20401ffc925fd858b38c759a379d75f7485a89b330.html"
+            },
+            {
+                title: 'Add User',
+                result: 'FAILURE',
+                link: "38e8a505f2a023036c1e3fe47847e97674995b3b47d511ccd245a225bd8bbd8c.html"
+            },
+            {
+                title: 'Comment Buzz post',
+                result: 'FAILURE',
+                link: "f5c7de467fdc1cebd56ff8fb2834c5362b14835ed5e4089c2b82ceca3ae2adc9.html"
+            },
+            {
+                title: 'Delete Emergency Contacts in My Info',
+                result: 'FAILURE',
+                link: "6c4d2ae17ffea2405b3833f12183e6df85a928d44913d5b129320de865fcf45a.html"
+            },
+            {
+                title: 'Delete User',
+                result: 'FAILURE',
+                link: "d18eb91249e8fb136e1f4d9863aae06a945a80ce19735351e88d3b005854a45e.html"
+            },
+            {
+                title: 'Search Candidate',
+                result: 'FAILURE',
+                link: "27f82bc6ae9beac65c839c5e82fd3e26cf8dd4543adb5e0bdae533c34dd44f50.html"
+            },
+            {
+                title: 'Submit a Claim',
+                result: 'FAILURE',
+                link: "0a0e43d84f2ec200fcedbbbaf2c6b5c6611434b014afe35c5c444a9a508aa186.html"
+            },
+            {
+                title: 'Update Contact Details In My Info',
+                result: 'FAILURE',
+                link: "0a63d46565faf6e215dc9d24ed0faa0f3dd52b339b01ad98bb8b5e89df92f3dd.html"
             },
         ]
         const coverageData = {
             labels: [
-                'Create a Book',
+                'Add Emergency Contacts in My Info',
+                'Add User',
+                'Comment Buzz post',
+                'Delete Emergency Contacts in My Info',
+                'Delete User',
+                'Search Candidate',
+                'Submit a Claim',
+                'Update Contact Details In My Info',
             ],
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
                     label: ['Pending Tests'],
-                    data: [0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(165, 199, 238, 0.5)' ]
                 },
                 {
                     label: ['Ignored Tests'],
-                    data: [0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(168, 168, 168, 0.5)' ]
                 },
                 {
                     label: ['Skipped Tests'],
-                    data: [0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(238, 224, 152, 0.75)' ]
                 },
                 {
                     label: ['Aborted Tests'],
-                    data: [0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 153, 102, 0.5)' ]
                 },
                 {
                     label: ['Failed Tests'],
-                    data: [6],
+                    data: [1,1,1,1,1,1,1,1],
                     backgroundColor: [ 'rgba(255, 22, 49, 0.5)' ]
                 },
                 {
                     label: ['Errors'],
-                    data: [0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 97, 8, 0.5)' ]
                 },
                 {
                     label: ['Compromised Tests'],
-                    data: [0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: [ 'rgba(255, 104, 255, 0.5)' ]
                 },
             ]

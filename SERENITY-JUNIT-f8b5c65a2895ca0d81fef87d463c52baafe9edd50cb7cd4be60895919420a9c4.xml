@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="1" name="Update Contact Details In My Info" skipped="0" tests="2" time="62.01" timestamp="2025-01-04 01:35:53"><testcase name="User successfully updates contact details with valid input"><error message="Expected condition failed: waiting for By.xpath: //div[@class='oxd-toast-content']//p[contains(@class, 'oxd-text--toast-message')] to be displayed (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '4.26.0', revision: '8ccf0219d7'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Expected condition failed: waiting for By.xpath: //div[@class='oxd-toast-content']//p[contains(@class, 'oxd-text--toast-message')] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for By.xpath: //div[@class='oxd-toast-content']//p[contains(@class, 'oxd-text--toast-message')] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: driver.version: unknown&#13;
+pages.PageObjectBase.getToastMessage(PageObjectBase.java:38)&#13;
+steps.CommonSteps.verifyToastPopUpWithMessage(CommonSteps.java:37)&#13;
+tests.UpdateContactDetails.aToastWithMessageShouldBeDisplayed(UpdateContactDetails.java:58)&#13;
+✽.a toast with "Success" message should be displayed(classpath:features/UpdateContactDetails.feature:17)&#13;
+</system-err></testcase><testcase name="User tries to update contact details with invalid input"><failure message="There are no input validation errors shown. Actual: 0" type="java.lang.AssertionError">There are no input validation errors shown. Actual: 0</failure><system-err>There are no input validation errors shown. Actual: 0&#13;
+steps.CommonSteps.checkIfThereIsAnyInputValidationsErrors(CommonSteps.java:47)&#13;
+tests.UpdateContactDetails.theUserShouldSeeInputValidationErrorMessages(UpdateContactDetails.java:68)&#13;
+✽.the user should see input validation error messages(classpath:features/UpdateContactDetails.feature:26)&#13;
+</system-err></testcase></testsuite>

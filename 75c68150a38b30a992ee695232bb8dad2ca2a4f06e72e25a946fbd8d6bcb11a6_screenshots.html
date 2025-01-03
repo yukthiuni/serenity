@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity and Cucumber Quick Start</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="74428f69320334b689c2af1b669ab1fe875b38167bb0b20fe84585bee405d97b.html">Search Claim</a></span>
+                > <span class="truncate-60"><a
+                    href="75c68150a38b30a992ee695232bb8dad2ca2a4f06e72e25a946fbd8d6bcb11a6.html">Search a claim </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 04-01-2025 01:32</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Search A Claim </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="34658a1663fcf042bd7acb3325affbe4e647c8acd84d0228be2f52e1381e61b9.html">10 To 30 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Search a claim
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given the user is on the Claims Page<br>And the user selects the Event "&lt;Event&gt;" in the search field<br>And the user selects the Status "&lt;Status&gt;" in the search field<br>And the user selects the reference number in the search field<br>When the user clicks the search button<br>Then the user should only see the claim details Event "&lt;Event&gt;" and Currency "&lt;Currency&gt;" and Remarks "&lt;Remarks&gt;" in the search result</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" 1: Search a claim ({Event=Medical Reimbursement, Status=Initiated, Currency=United States Dollar, Remarks=Hospital Stay})" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given user is logged in as an Admin" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given the user is on the Claims Page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Open claims page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given the user is on the Claims Page (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit Claim button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Click submit claim button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit Claim button (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" And the user is navigated to the Submit Claim page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Verify submit claim page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" And the user is navigated to the Submit Claim page (completed)" width="0"/>
+                <img src="5d2ed530c96f0795e30c02223627e3608966926fd6a3e50d254c73e542d5f59c.png" title=" And the user selects the Event &quot;Medical Reimbursement&quot;" width="0"/>
+                <img src="5d2ed530c96f0795e30c02223627e3608966926fd6a3e50d254c73e542d5f59c.png" title=" Select event: Medical Reimbursement" width="0"/>
+                <img src="5d2ed530c96f0795e30c02223627e3608966926fd6a3e50d254c73e542d5f59c.png" title=" And the user selects the Event &quot;Medical Reimbursement&quot; (completed)" width="0"/>
+                <img src="289cab333defd3dd7844bbe32b6bd57712221aee259ba9c01b25f4c951652370.png" title=" And the user selects the Currency &quot;United States Dollar&quot;" width="0"/>
+                <img src="289cab333defd3dd7844bbe32b6bd57712221aee259ba9c01b25f4c951652370.png" title=" Select currency: United States Dollar" width="0"/>
+                <img src="289cab333defd3dd7844bbe32b6bd57712221aee259ba9c01b25f4c951652370.png" title=" And the user selects the Currency &quot;United States Dollar&quot; (completed)" width="0"/>
+                <img src="635f2211d22b62fe8cca2fc29657aa3769ab9bd7ba41e368d83a77a21b9261ab.png" title=" And the user enters Remarks &quot;Hospital Stay&quot;" width="0"/>
+                <img src="635f2211d22b62fe8cca2fc29657aa3769ab9bd7ba41e368d83a77a21b9261ab.png" title=" Enter remarks: Hospital Stay" width="0"/>
+                <img src="635f2211d22b62fe8cca2fc29657aa3769ab9bd7ba41e368d83a77a21b9261ab.png" title=" And the user enters Remarks &quot;Hospital Stay&quot; (completed)" width="0"/>
+                <img src="66b6211086c1a880cf97a78f85345d44436791b601d79582bf1a1dd38d36f5cc.png" title=" And the user clicks the Create button" width="0"/>
+                <img src="66b6211086c1a880cf97a78f85345d44436791b601d79582bf1a1dd38d36f5cc.png" title=" Click create button" width="0"/>
+                <img src="66b6211086c1a880cf97a78f85345d44436791b601d79582bf1a1dd38d36f5cc.png" title=" And the user clicks the Create button (completed)" width="0"/>
+                <img src="66b6211086c1a880cf97a78f85345d44436791b601d79582bf1a1dd38d36f5cc.png" title=" Then the user is directed to the View Claim page" width="0"/>
+                <img src="66b6211086c1a880cf97a78f85345d44436791b601d79582bf1a1dd38d36f5cc.png" title=" Verify navigate to view claim page" width="0"/>
+                <img src="66b6211086c1a880cf97a78f85345d44436791b601d79582bf1a1dd38d36f5cc.png" title=" Then the user is directed to the View Claim page (completed)" width="0"/>
+                <img src="66b6211086c1a880cf97a78f85345d44436791b601d79582bf1a1dd38d36f5cc.png" title=" And the user should see the claim details Event &quot;Medical Reimbursement&quot; and Currency &quot;United States Dollar&quot; and Remarks &quot;Hospital Stay&quot;" width="0"/>
+                <img src="66b6211086c1a880cf97a78f85345d44436791b601d79582bf1a1dd38d36f5cc.png" title=" Verify claim details: Medical Reimbursement, United States Dollar, Hospital Stay" width="0"/>
+                <img src="66b6211086c1a880cf97a78f85345d44436791b601d79582bf1a1dd38d36f5cc.png" title=" And the user should see the claim details Event &quot;Medical Reimbursement&quot; and Currency &quot;United States Dollar&quot; and Remarks &quot;Hospital Stay&quot; (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given the user is on the Claims Page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Open claims page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given the user is on the Claims Page (completed)" width="0"/>
+                <img src="7c501de2c08e375c90017c5ea766ff7bd41cbe99b929f848c26439aad98e1542.png" title=" And the user selects the Event &quot;Medical Reimbursement&quot; in the search field" width="0"/>
+                <img src="7c501de2c08e375c90017c5ea766ff7bd41cbe99b929f848c26439aad98e1542.png" title=" Select event: Medical Reimbursement" width="0"/>
+                <img src="7c501de2c08e375c90017c5ea766ff7bd41cbe99b929f848c26439aad98e1542.png" title=" And the user selects the Event &quot;Medical Reimbursement&quot; in the search field (completed)" width="0"/>
+                <img src="55a86c9c67bc706d8106c20df1ca3d6a1ceb28a5e4131190e5b476f12a0324fe.png" title=" And the user selects the Status &quot;Initiated&quot; in the search field" width="0"/>
+                <img src="55a86c9c67bc706d8106c20df1ca3d6a1ceb28a5e4131190e5b476f12a0324fe.png" title=" Select status: Initiated" width="0"/>
+                <img src="55a86c9c67bc706d8106c20df1ca3d6a1ceb28a5e4131190e5b476f12a0324fe.png" title=" And the user selects the Status &quot;Initiated&quot; in the search field (completed)" width="0"/>
+                <img src="e2caf72ae64f2516ae0222cdbb6d1d225ddcb45a9cec7e1668381e598d69e2d0.png" title=" And the user selects the reference number in the search field" width="0"/>
+                <img src="e2caf72ae64f2516ae0222cdbb6d1d225ddcb45a9cec7e1668381e598d69e2d0.png" title=" Select reference number" width="0"/>
+                <img src="e2caf72ae64f2516ae0222cdbb6d1d225ddcb45a9cec7e1668381e598d69e2d0.png" title=" And the user selects the reference number in the search field (completed)" width="0"/>
+                <img src="eb9aac4c64dce0e2d387b6cb495d73ffe0cd5e51fdb947f8c9a26d065380da4c.png" title=" When the user clicks the search button" width="0"/>
+                <img src="eb9aac4c64dce0e2d387b6cb495d73ffe0cd5e51fdb947f8c9a26d065380da4c.png" title=" Click search button" width="0"/>
+                <img src="eb9aac4c64dce0e2d387b6cb495d73ffe0cd5e51fdb947f8c9a26d065380da4c.png" title=" When the user clicks the search button (completed)" width="0"/>
+                <img src="eb9aac4c64dce0e2d387b6cb495d73ffe0cd5e51fdb947f8c9a26d065380da4c.png" title=" Then the user should only see the claim details Event &quot;Medical Reimbursement&quot; and Currency &quot;United States Dollar&quot; and Remarks &quot;Hospital Stay&quot; in the search result" width="0"/>
+                <img src="eb9aac4c64dce0e2d387b6cb495d73ffe0cd5e51fdb947f8c9a26d065380da4c.png" title=" Verify claim details: Medical Reimbursement, United States Dollar, Hospital Stay" width="0"/>
+
+                <img src="eb9aac4c64dce0e2d387b6cb495d73ffe0cd5e51fdb947f8c9a26d065380da4c.png" title=" Then the user should only see the claim details Event "Medical Reimbursement" and Currency "United States Dollar" and Remarks "Hospital Stay" in the search result (completed): <span class='success-color'>SUCCESS</span>" width="0"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 4.2.8</span>
+</div>
+</body>
+</html>

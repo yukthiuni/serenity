@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Add User" skipped="0" tests="3" time="85.99" timestamp="2025-01-04 01:23:36"><testcase name="Add User by Entering Valid Values"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+pages.UserManagementPage.verifyCurrentPage(UserManagementPage.java:41)&#13;
+steps.UserManagementPageStepLibrary.verifyCurrentPage(UserManagementPageStepLibrary.java:21)&#13;
+tests.AddUserStepDefinitions.user_is_directed_to_the_view_user_page(AddUserStepDefinitions.java:86)&#13;
+✽.User is directed to the view user page(classpath:features/AddUser.feature:15)&#13;
+</system-err></testcase><testcase name="Add User Without Filling Required Fields"/><testcase name="Add User Without Filling Confirm Password Field"/></testsuite>

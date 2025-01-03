@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity and Cucumber Quick Start</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="0a0e43d84f2ec200fcedbbbaf2c6b5c6611434b014afe35c5c444a9a508aa186.html">Submit Claim</a></span>
+                > <span class="truncate-60"><a
+                    href="e9478f03719699886870315a68563f1d27f2fc0c0fcdf79598ea2724807a7a50.html">Add expenses and submit </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 04-01-2025 01:33</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Submit A Claim </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="5698da923f295f46ce5ab64ced2311fc60caa4e36b32112606d3adcfdce3f60b.html">30 To 60 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Add expenses and submit
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given the user is directed to the View Claim page<br>When the user clicks the Add Expenses button<br>Then the add expenses modal should be displayed<br>And the user selects the Expense Type "&lt;ExpenseType&gt;"<br>And the user enters the Amount "&lt;Amount&gt;"<br>And the user enters the Date "&lt;Date&gt;"<br>And the user enters the Note "&lt;Note&gt;"<br>And the user clicks the save button<br>Then the user should see the expense details Expense Type "&lt;ExpenseType&gt;" and Amount "&lt;Amount&gt;" and Date "&lt;Date&gt;" and Note "&lt;Note&gt;"<br>When the user clicks the Submit button<br>Then the user should see the claim status as "Submitted"</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" 1: Add expenses and submit ({ExpenseType=Planned Surgery, Amount=100, Date=2025-02-01, Note=Meal})" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given user is logged in as an Admin" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given the user is on the Claims Page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Open claims page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given the user is on the Claims Page (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit Claim button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Click submit claim button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit Claim button (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" And the user is navigated to the Submit Claim page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Verify submit claim page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" And the user is navigated to the Submit Claim page (completed)" width="0"/>
+                <img src="5d2ed530c96f0795e30c02223627e3608966926fd6a3e50d254c73e542d5f59c.png" title=" And the user selects the Event &quot;Medical Reimbursement&quot;" width="0"/>
+                <img src="5d2ed530c96f0795e30c02223627e3608966926fd6a3e50d254c73e542d5f59c.png" title=" Select event: Medical Reimbursement" width="0"/>
+                <img src="5d2ed530c96f0795e30c02223627e3608966926fd6a3e50d254c73e542d5f59c.png" title=" And the user selects the Event &quot;Medical Reimbursement&quot; (completed)" width="0"/>
+                <img src="289cab333defd3dd7844bbe32b6bd57712221aee259ba9c01b25f4c951652370.png" title=" And the user selects the Currency &quot;United States Dollar&quot;" width="0"/>
+                <img src="289cab333defd3dd7844bbe32b6bd57712221aee259ba9c01b25f4c951652370.png" title=" Select currency: United States Dollar" width="0"/>
+                <img src="289cab333defd3dd7844bbe32b6bd57712221aee259ba9c01b25f4c951652370.png" title=" And the user selects the Currency &quot;United States Dollar&quot; (completed)" width="0"/>
+                <img src="635f2211d22b62fe8cca2fc29657aa3769ab9bd7ba41e368d83a77a21b9261ab.png" title=" And the user enters Remarks &quot;Hospital Stay&quot;" width="0"/>
+                <img src="635f2211d22b62fe8cca2fc29657aa3769ab9bd7ba41e368d83a77a21b9261ab.png" title=" Enter remarks: Hospital Stay" width="0"/>
+                <img src="635f2211d22b62fe8cca2fc29657aa3769ab9bd7ba41e368d83a77a21b9261ab.png" title=" And the user enters Remarks &quot;Hospital Stay&quot; (completed)" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" And the user clicks the Create button" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" Click create button" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" And the user clicks the Create button (completed)" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" Then the user is directed to the View Claim page" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" Verify navigate to view claim page" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" Then the user is directed to the View Claim page (completed)" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" And the user should see the claim details Event &quot;Medical Reimbursement&quot; and Currency &quot;United States Dollar&quot; and Remarks &quot;Hospital Stay&quot;" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" Verify claim details: Medical Reimbursement, United States Dollar, Hospital Stay" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" And the user should see the claim details Event &quot;Medical Reimbursement&quot; and Currency &quot;United States Dollar&quot; and Remarks &quot;Hospital Stay&quot; (completed)" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" Given the user is directed to the View Claim page" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" Verify navigate to view claim page" width="0"/>
+                <img src="dc0ecc9da8a28928e34c35bb864dcc51ec6699bc63367b89d0f55ff19b3e66d9.png" title=" Given the user is directed to the View Claim page (completed)" width="0"/>
+                <img src="927b49ccfd12ae308a6271fc66344d2d44f240b8280d8a2a03b6e60cfb21a36c.png" title=" When the user clicks the Add Expenses button" width="0"/>
+                <img src="927b49ccfd12ae308a6271fc66344d2d44f240b8280d8a2a03b6e60cfb21a36c.png" title=" Click add button" width="0"/>
+                <img src="927b49ccfd12ae308a6271fc66344d2d44f240b8280d8a2a03b6e60cfb21a36c.png" title=" When the user clicks the Add Expenses button (completed)" width="0"/>
+                <img src="927b49ccfd12ae308a6271fc66344d2d44f240b8280d8a2a03b6e60cfb21a36c.png" title=" Then the add expenses modal should be displayed" width="0"/>
+                <img src="927b49ccfd12ae308a6271fc66344d2d44f240b8280d8a2a03b6e60cfb21a36c.png" title=" Verify add expense modal" width="0"/>
+                <img src="acf98ca7af8dcfd8e9898775c4cc8fd2e88eda803e42d9ee91aa54937b7722b1.png" title=" Then the add expenses modal should be displayed (completed)" width="0"/>
+                <img src="079ab4e03a859ec80a02cdbfb86516ab04147a5c900b00465d658baae5ef60e9.png" title=" And the user selects the Expense Type &quot;Planned Surgery&quot;" width="0"/>
+                <img src="079ab4e03a859ec80a02cdbfb86516ab04147a5c900b00465d658baae5ef60e9.png" title=" Select expense type: Planned Surgery" width="0"/>
+                <img src="079ab4e03a859ec80a02cdbfb86516ab04147a5c900b00465d658baae5ef60e9.png" title=" And the user selects the Expense Type &quot;Planned Surgery&quot; (completed)" width="0"/>
+                <img src="965fb9fede3728add1879299da237ae02b6d41fe763e3847d1e31058f6a68b17.png" title=" And the user enters the Amount &quot;100&quot;" width="0"/>
+                <img src="965fb9fede3728add1879299da237ae02b6d41fe763e3847d1e31058f6a68b17.png" title=" Enter expense amount: 100" width="0"/>
+                <img src="965fb9fede3728add1879299da237ae02b6d41fe763e3847d1e31058f6a68b17.png" title=" And the user enters the Amount &quot;100&quot; (completed)" width="0"/>
+                <img src="3db0e2c324cd358a071764b23f9e11318907e3d454b65514921ba2b2a06d9fdd.png" title=" And the user enters the Date &quot;2025-02-01&quot;" width="0"/>
+                <img src="3db0e2c324cd358a071764b23f9e11318907e3d454b65514921ba2b2a06d9fdd.png" title=" Enter expense date: 2025-02-01" width="0"/>
+                <img src="3db0e2c324cd358a071764b23f9e11318907e3d454b65514921ba2b2a06d9fdd.png" title=" And the user enters the Date &quot;2025-02-01&quot; (completed)" width="0"/>
+                <img src="9ade615bb78fb86a1f11cb48ad6f97d195bdc71dce861f82174db30301965dcd.png" title=" And the user enters the Note &quot;Meal&quot;" width="0"/>
+                <img src="9ade615bb78fb86a1f11cb48ad6f97d195bdc71dce861f82174db30301965dcd.png" title=" Enter expense note: Meal" width="0"/>
+                <img src="9ade615bb78fb86a1f11cb48ad6f97d195bdc71dce861f82174db30301965dcd.png" title=" And the user enters the Note &quot;Meal&quot; (completed)" width="0"/>
+                <img src="2aa5ec470f04793be01f078ef066bdce8e615aad9a22ad804cef83a291e2098e.png" title=" And the user clicks the save button" width="0"/>
+                <img src="2aa5ec470f04793be01f078ef066bdce8e615aad9a22ad804cef83a291e2098e.png" title=" Click save button" width="0"/>
+                <img src="2aa5ec470f04793be01f078ef066bdce8e615aad9a22ad804cef83a291e2098e.png" title=" And the user clicks the save button (completed)" width="0"/>
+                <img src="aa98728263acd175e1839d48ae9065f47a1856e6ad6894c21660cbe8e39574ec.png" title=" Then the user should see the expense details Expense Type &quot;Planned Surgery&quot; and Amount &quot;100&quot; and Date &quot;2025-02-01&quot; and Note &quot;Meal&quot;" width="0"/>
+                <img src="aa98728263acd175e1839d48ae9065f47a1856e6ad6894c21660cbe8e39574ec.png" title=" Verify expense details: Planned Surgery, 100, 2025-02-01, Meal" width="0"/>
+                <img src="aa98728263acd175e1839d48ae9065f47a1856e6ad6894c21660cbe8e39574ec.png" title=" Then the user should see the expense details Expense Type &quot;Planned Surgery&quot; and Amount &quot;100&quot; and Date &quot;2025-02-01&quot; and Note &quot;Meal&quot; (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Click submit button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit button (completed)" width="0"/>
+                <img src="5a41e6b7fa5a49ccb84732fcad6dfe490027eaf4e98d1549ef172fcdd7eb73d9.png" title=" Then the user should see the claim status as &quot;Submitted&quot;" width="0"/>
+                <img src="5a41e6b7fa5a49ccb84732fcad6dfe490027eaf4e98d1549ef172fcdd7eb73d9.png" title=" Verify claim status: Submitted" width="0"/>
+                <img src="5a41e6b7fa5a49ccb84732fcad6dfe490027eaf4e98d1549ef172fcdd7eb73d9.png" title=" Then the user should see the claim status as &quot;Submitted&quot; (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" 2: Add expenses and submit ({ExpenseType=Transport, Amount=200, Date=2024-01-02, Note=Taxi})" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given user is logged in as an Admin" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given the user is on the Claims Page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Open claims page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given the user is on the Claims Page (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit Claim button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Click submit claim button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit Claim button (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" And the user is navigated to the Submit Claim page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Verify submit claim page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" And the user is navigated to the Submit Claim page (completed)" width="0"/>
+                <img src="5d2ed530c96f0795e30c02223627e3608966926fd6a3e50d254c73e542d5f59c.png" title=" And the user selects the Event &quot;Medical Reimbursement&quot;" width="0"/>
+                <img src="5d2ed530c96f0795e30c02223627e3608966926fd6a3e50d254c73e542d5f59c.png" title=" Select event: Medical Reimbursement" width="0"/>
+                <img src="5d2ed530c96f0795e30c02223627e3608966926fd6a3e50d254c73e542d5f59c.png" title=" And the user selects the Event &quot;Medical Reimbursement&quot; (completed)" width="0"/>
+                <img src="289cab333defd3dd7844bbe32b6bd57712221aee259ba9c01b25f4c951652370.png" title=" And the user selects the Currency &quot;United States Dollar&quot;" width="0"/>
+                <img src="289cab333defd3dd7844bbe32b6bd57712221aee259ba9c01b25f4c951652370.png" title=" Select currency: United States Dollar" width="0"/>
+                <img src="289cab333defd3dd7844bbe32b6bd57712221aee259ba9c01b25f4c951652370.png" title=" And the user selects the Currency &quot;United States Dollar&quot; (completed)" width="0"/>
+                <img src="635f2211d22b62fe8cca2fc29657aa3769ab9bd7ba41e368d83a77a21b9261ab.png" title=" And the user enters Remarks &quot;Hospital Stay&quot;" width="0"/>
+                <img src="635f2211d22b62fe8cca2fc29657aa3769ab9bd7ba41e368d83a77a21b9261ab.png" title=" Enter remarks: Hospital Stay" width="0"/>
+                <img src="635f2211d22b62fe8cca2fc29657aa3769ab9bd7ba41e368d83a77a21b9261ab.png" title=" And the user enters Remarks &quot;Hospital Stay&quot; (completed)" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" And the user clicks the Create button" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" Click create button" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" And the user clicks the Create button (completed)" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" Then the user is directed to the View Claim page" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" Verify navigate to view claim page" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" Then the user is directed to the View Claim page (completed)" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" And the user should see the claim details Event &quot;Medical Reimbursement&quot; and Currency &quot;United States Dollar&quot; and Remarks &quot;Hospital Stay&quot;" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" Verify claim details: Medical Reimbursement, United States Dollar, Hospital Stay" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" And the user should see the claim details Event &quot;Medical Reimbursement&quot; and Currency &quot;United States Dollar&quot; and Remarks &quot;Hospital Stay&quot; (completed)" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" Given the user is directed to the View Claim page" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" Verify navigate to view claim page" width="0"/>
+                <img src="7a6fd17abf502e4194d1b05637edcd520ad21d86f8946fb00abcc7a63ea42732.png" title=" Given the user is directed to the View Claim page (completed)" width="0"/>
+                <img src="6b2b029fa1a1763c82e51475ec91b8b4f07195521fc084c1f5db1bea061489e6.png" title=" When the user clicks the Add Expenses button" width="0"/>
+                <img src="6b2b029fa1a1763c82e51475ec91b8b4f07195521fc084c1f5db1bea061489e6.png" title=" Click add button" width="0"/>
+                <img src="6b2b029fa1a1763c82e51475ec91b8b4f07195521fc084c1f5db1bea061489e6.png" title=" When the user clicks the Add Expenses button (completed)" width="0"/>
+                <img src="6b2b029fa1a1763c82e51475ec91b8b4f07195521fc084c1f5db1bea061489e6.png" title=" Then the add expenses modal should be displayed" width="0"/>
+                <img src="6b2b029fa1a1763c82e51475ec91b8b4f07195521fc084c1f5db1bea061489e6.png" title=" Verify add expense modal" width="0"/>
+                <img src="6b2b029fa1a1763c82e51475ec91b8b4f07195521fc084c1f5db1bea061489e6.png" title=" Then the add expenses modal should be displayed (completed)" width="0"/>
+                <img src="877bfd67bfe677e6730d5160a3911689e465958364f826bf24b458d7d1fd8688.png" title=" And the user selects the Expense Type &quot;Transport&quot;" width="0"/>
+                <img src="877bfd67bfe677e6730d5160a3911689e465958364f826bf24b458d7d1fd8688.png" title=" Select expense type: Transport" width="0"/>
+                <img src="877bfd67bfe677e6730d5160a3911689e465958364f826bf24b458d7d1fd8688.png" title=" And the user selects the Expense Type &quot;Transport&quot; (completed)" width="0"/>
+                <img src="e8be5a8819f54fbf9516c778fd2764d3344c05f0849cd3befd5a1bc9944af736.png" title=" And the user enters the Amount &quot;200&quot;" width="0"/>
+                <img src="e8be5a8819f54fbf9516c778fd2764d3344c05f0849cd3befd5a1bc9944af736.png" title=" Enter expense amount: 200" width="0"/>
+                <img src="e8be5a8819f54fbf9516c778fd2764d3344c05f0849cd3befd5a1bc9944af736.png" title=" And the user enters the Amount &quot;200&quot; (completed)" width="0"/>
+                <img src="fb7b2fcb58ffaf3e84df2ce4f9b84efb43a63332b1c7e3f03bc8f2c84d266a9c.png" title=" And the user enters the Date &quot;2024-01-02&quot;" width="0"/>
+                <img src="fb7b2fcb58ffaf3e84df2ce4f9b84efb43a63332b1c7e3f03bc8f2c84d266a9c.png" title=" Enter expense date: 2024-01-02" width="0"/>
+                <img src="fb7b2fcb58ffaf3e84df2ce4f9b84efb43a63332b1c7e3f03bc8f2c84d266a9c.png" title=" And the user enters the Date &quot;2024-01-02&quot; (completed)" width="0"/>
+                <img src="aed798b3ef08b31d2a4f9200b6f5878b4aa5174595dd39b713002b0c7e0e8fe1.png" title=" And the user enters the Note &quot;Taxi&quot;" width="0"/>
+                <img src="aed798b3ef08b31d2a4f9200b6f5878b4aa5174595dd39b713002b0c7e0e8fe1.png" title=" Enter expense note: Taxi" width="0"/>
+                <img src="aed798b3ef08b31d2a4f9200b6f5878b4aa5174595dd39b713002b0c7e0e8fe1.png" title=" And the user enters the Note &quot;Taxi&quot; (completed)" width="0"/>
+                <img src="559f9472f3e21ade4e0fd5ffb245601165357d0c3051735691e42264015c1c41.png" title=" And the user clicks the save button" width="0"/>
+                <img src="559f9472f3e21ade4e0fd5ffb245601165357d0c3051735691e42264015c1c41.png" title=" Click save button" width="0"/>
+                <img src="559f9472f3e21ade4e0fd5ffb245601165357d0c3051735691e42264015c1c41.png" title=" And the user clicks the save button (completed)" width="0"/>
+                <img src="794758a663a5d790ce339254ce71f277611e436dd8ada8e7a8d685484de1ba05.png" title=" Then the user should see the expense details Expense Type &quot;Transport&quot; and Amount &quot;200&quot; and Date &quot;2024-01-02&quot; and Note &quot;Taxi&quot;" width="0"/>
+                <img src="794758a663a5d790ce339254ce71f277611e436dd8ada8e7a8d685484de1ba05.png" title=" Verify expense details: Transport, 200, 2024-01-02, Taxi" width="0"/>
+                <img src="794758a663a5d790ce339254ce71f277611e436dd8ada8e7a8d685484de1ba05.png" title=" Then the user should see the expense details Expense Type &quot;Transport&quot; and Amount &quot;200&quot; and Date &quot;2024-01-02&quot; and Note &quot;Taxi&quot; (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Click submit button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit button (completed)" width="0"/>
+                <img src="e3941175a80dcf9362ad93d82c8d0d00f41b158ae271883c3a8034bcea983b45.png" title=" Then the user should see the claim status as &quot;Submitted&quot;" width="0"/>
+                <img src="e3941175a80dcf9362ad93d82c8d0d00f41b158ae271883c3a8034bcea983b45.png" title=" Verify claim status: Submitted" width="0"/>
+                <img src="e3941175a80dcf9362ad93d82c8d0d00f41b158ae271883c3a8034bcea983b45.png" title=" Then the user should see the claim status as &quot;Submitted&quot; (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" 3: Add expenses and submit ({ExpenseType=Accommodation, Amount=300, Date=2023-12-03, Note=Hotel})" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given user is logged in as an Admin" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given the user is on the Claims Page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Open claims page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Given the user is on the Claims Page (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit Claim button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Click submit claim button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit Claim button (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" And the user is navigated to the Submit Claim page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Verify submit claim page" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" And the user is navigated to the Submit Claim page (completed)" width="0"/>
+                <img src="7b7c4c80f93feb2126521192a6632c5adf3b3778d83d5f665b740c594fb30317.png" title=" And the user selects the Event &quot;Medical Reimbursement&quot;" width="0"/>
+                <img src="7b7c4c80f93feb2126521192a6632c5adf3b3778d83d5f665b740c594fb30317.png" title=" Select event: Medical Reimbursement" width="0"/>
+                <img src="7b7c4c80f93feb2126521192a6632c5adf3b3778d83d5f665b740c594fb30317.png" title=" And the user selects the Event &quot;Medical Reimbursement&quot; (completed)" width="0"/>
+                <img src="b7c0b428f377cfd4e76dfc95f44d213b0981e1cb2fe47681bde336e29f9cabdc.png" title=" And the user selects the Currency &quot;United States Dollar&quot;" width="0"/>
+                <img src="b7c0b428f377cfd4e76dfc95f44d213b0981e1cb2fe47681bde336e29f9cabdc.png" title=" Select currency: United States Dollar" width="0"/>
+                <img src="b7c0b428f377cfd4e76dfc95f44d213b0981e1cb2fe47681bde336e29f9cabdc.png" title=" And the user selects the Currency &quot;United States Dollar&quot; (completed)" width="0"/>
+                <img src="70a9fe8adda0fec783c8755616ca05490e17eb5ef3b250fe4601817c94cb31b2.png" title=" And the user enters Remarks &quot;Hospital Stay&quot;" width="0"/>
+                <img src="70a9fe8adda0fec783c8755616ca05490e17eb5ef3b250fe4601817c94cb31b2.png" title=" Enter remarks: Hospital Stay" width="0"/>
+                <img src="70a9fe8adda0fec783c8755616ca05490e17eb5ef3b250fe4601817c94cb31b2.png" title=" And the user enters Remarks &quot;Hospital Stay&quot; (completed)" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" And the user clicks the Create button" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" Click create button" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" And the user clicks the Create button (completed)" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" Then the user is directed to the View Claim page" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" Verify navigate to view claim page" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" Then the user is directed to the View Claim page (completed)" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" And the user should see the claim details Event &quot;Medical Reimbursement&quot; and Currency &quot;United States Dollar&quot; and Remarks &quot;Hospital Stay&quot;" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" Verify claim details: Medical Reimbursement, United States Dollar, Hospital Stay" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" And the user should see the claim details Event &quot;Medical Reimbursement&quot; and Currency &quot;United States Dollar&quot; and Remarks &quot;Hospital Stay&quot; (completed)" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" Given the user is directed to the View Claim page" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" Verify navigate to view claim page" width="0"/>
+                <img src="f48c2bbeeaeda935c231e5f6e0290e95838e8fbe3fe222e174af03225470bfc0.png" title=" Given the user is directed to the View Claim page (completed)" width="0"/>
+                <img src="bea2e6139e167826a9e8d94fc7ca7f19937a5c8f12965a915cbfda57172e18f0.png" title=" When the user clicks the Add Expenses button" width="0"/>
+                <img src="bea2e6139e167826a9e8d94fc7ca7f19937a5c8f12965a915cbfda57172e18f0.png" title=" Click add button" width="0"/>
+                <img src="bea2e6139e167826a9e8d94fc7ca7f19937a5c8f12965a915cbfda57172e18f0.png" title=" When the user clicks the Add Expenses button (completed)" width="0"/>
+                <img src="bea2e6139e167826a9e8d94fc7ca7f19937a5c8f12965a915cbfda57172e18f0.png" title=" Then the add expenses modal should be displayed" width="0"/>
+                <img src="bea2e6139e167826a9e8d94fc7ca7f19937a5c8f12965a915cbfda57172e18f0.png" title=" Verify add expense modal" width="0"/>
+                <img src="bea2e6139e167826a9e8d94fc7ca7f19937a5c8f12965a915cbfda57172e18f0.png" title=" Then the add expenses modal should be displayed (completed)" width="0"/>
+                <img src="cdccbd38d8d00719977e108782926272b5fb664e4ea4e5b8a536902645a2a4d7.png" title=" And the user selects the Expense Type &quot;Accommodation&quot;" width="0"/>
+                <img src="cdccbd38d8d00719977e108782926272b5fb664e4ea4e5b8a536902645a2a4d7.png" title=" Select expense type: Accommodation" width="0"/>
+                <img src="cdccbd38d8d00719977e108782926272b5fb664e4ea4e5b8a536902645a2a4d7.png" title=" And the user selects the Expense Type &quot;Accommodation&quot; (completed)" width="0"/>
+                <img src="241eaf6155d9b833d9b5a99411e05ba5a643551e47a4c73cdfc9c7948fb303d2.png" title=" And the user enters the Amount &quot;300&quot;" width="0"/>
+                <img src="241eaf6155d9b833d9b5a99411e05ba5a643551e47a4c73cdfc9c7948fb303d2.png" title=" Enter expense amount: 300" width="0"/>
+                <img src="241eaf6155d9b833d9b5a99411e05ba5a643551e47a4c73cdfc9c7948fb303d2.png" title=" And the user enters the Amount &quot;300&quot; (completed)" width="0"/>
+                <img src="e9738a85ebaed86c58d8ccadb5d6c1f5968bd0123c572f6da066a12af1a67ecc.png" title=" And the user enters the Date &quot;2023-12-03&quot;" width="0"/>
+                <img src="e9738a85ebaed86c58d8ccadb5d6c1f5968bd0123c572f6da066a12af1a67ecc.png" title=" Enter expense date: 2023-12-03" width="0"/>
+                <img src="e9738a85ebaed86c58d8ccadb5d6c1f5968bd0123c572f6da066a12af1a67ecc.png" title=" And the user enters the Date &quot;2023-12-03&quot; (completed)" width="0"/>
+                <img src="407f72fe84e7f1e3f50725f4f827e1143f7f4a9c8385d697150c8bfd35deea32.png" title=" And the user enters the Note &quot;Hotel&quot;" width="0"/>
+                <img src="407f72fe84e7f1e3f50725f4f827e1143f7f4a9c8385d697150c8bfd35deea32.png" title=" Enter expense note: Hotel" width="0"/>
+                <img src="407f72fe84e7f1e3f50725f4f827e1143f7f4a9c8385d697150c8bfd35deea32.png" title=" And the user enters the Note &quot;Hotel&quot; (completed)" width="0"/>
+                <img src="e2c49a0a65b417f07468f8f35ef1df0b7253e5dffbd91e068bdaf5c31652b430.png" title=" And the user clicks the save button" width="0"/>
+                <img src="e2c49a0a65b417f07468f8f35ef1df0b7253e5dffbd91e068bdaf5c31652b430.png" title=" Click save button" width="0"/>
+                <img src="e2c49a0a65b417f07468f8f35ef1df0b7253e5dffbd91e068bdaf5c31652b430.png" title=" And the user clicks the save button (completed)" width="0"/>
+                <img src="206cf4f9b5cb2b456d1b6d31b73e19bf570b49ebe3c41508c8a7d9ccba8acb02.png" title=" Then the user should see the expense details Expense Type &quot;Accommodation&quot; and Amount &quot;300&quot; and Date &quot;2023-12-03&quot; and Note &quot;Hotel&quot;" width="0"/>
+                <img src="206cf4f9b5cb2b456d1b6d31b73e19bf570b49ebe3c41508c8a7d9ccba8acb02.png" title=" Verify expense details: Accommodation, 300, 2023-12-03, Hotel" width="0"/>
+                <img src="206cf4f9b5cb2b456d1b6d31b73e19bf570b49ebe3c41508c8a7d9ccba8acb02.png" title=" Then the user should see the expense details Expense Type &quot;Accommodation&quot; and Amount &quot;300&quot; and Date &quot;2023-12-03&quot; and Note &quot;Hotel&quot; (completed)" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" Click submit button" width="0"/>
+                <img src="d8d97b9014aa991a626cf0edc4d1c19dfe4a420f5be88f759ca3f7a6498c407a.png" title=" When the user clicks the Submit button (completed)" width="0"/>
+                <img src="68c80950c73b25d6d4ef84e26155df8a9a62b1e31e9e3d1eb83063ccce29bbcf.png" title=" Then the user should see the claim status as &quot;Submitted&quot;" width="0"/>
+                <img src="68c80950c73b25d6d4ef84e26155df8a9a62b1e31e9e3d1eb83063ccce29bbcf.png" title=" Verify claim status: Submitted" width="0"/>
+
+                <img src="68c80950c73b25d6d4ef84e26155df8a9a62b1e31e9e3d1eb83063ccce29bbcf.png" title=" Then the user should see the claim status as "Submitted" (completed): <span class='success-color'>SUCCESS</span>" width="0"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 4.2.8</span>
+</div>
+</body>
+</html>

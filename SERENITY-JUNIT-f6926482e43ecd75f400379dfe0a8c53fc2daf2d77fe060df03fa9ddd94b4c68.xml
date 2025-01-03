@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Create a New Claim" skipped="0" tests="4" time="78.15" timestamp="2025-01-04 01:25:22"><testcase name="Create a new claim with all mandatory fields filled"/><testcase name="Create a new claim without filling mandatory fields"/></testsuite>

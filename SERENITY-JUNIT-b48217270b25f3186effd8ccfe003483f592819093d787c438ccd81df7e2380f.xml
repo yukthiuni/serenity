@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Employee Management" skipped="0" tests="4" time="467.21" timestamp="2025-01-04 01:30:10"><testcase name="Add a new employee successfully"/><testcase name="Prevent saving invalid employee names"><failure message="Unexpected redirection to the employee personal details page with invalid employee details." type="java.lang.AssertionError">Unexpected redirection to the employee personal details page with invalid employee details.</failure><system-err>Unexpected redirection to the employee personal details page with invalid employee details.&#13;
+pages.EmployeePage.verifyNoRedirectionToPersonalDetails(EmployeePage.java:174)&#13;
+steps.EmployeeSteps.verifyNoRedirectionToPersonalDetails(EmployeeSteps.java:44)&#13;
+tests.EmployeeManagement.userShouldNotBeRedirectedToEmployeeDetailsPage(EmployeeManagement.java:56)&#13;
+✽.user should not be redirected to employee details page(classpath:features/Employee.feature:25)&#13;
+</system-err></testcase><testcase name="Add a new employee with login details successfully"/><testcase name="Delete an employee"/></testsuite>

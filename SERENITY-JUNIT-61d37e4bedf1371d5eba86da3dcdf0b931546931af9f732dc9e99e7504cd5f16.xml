@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Search User" skipped="0" tests="1" time="32.1" timestamp="2025-01-04 01:33:17"><testcase name=""><failure type="java.lang.AssertionError"/><system-err>null&#13;
+pages.UserManagementPage.verifyCurrentPage(UserManagementPage.java:41)&#13;
+steps.UserManagementPageStepLibrary.verifyCurrentPage(UserManagementPageStepLibrary.java:21)&#13;
+tests.AddUserStepDefinitions.user_is_directed_to_the_view_user_page(AddUserStepDefinitions.java:86)&#13;
+✽.User is directed to the view user page(classpath:features/SearchSystemUsers.feature:15)&#13;
+</system-err></testcase></testsuite>

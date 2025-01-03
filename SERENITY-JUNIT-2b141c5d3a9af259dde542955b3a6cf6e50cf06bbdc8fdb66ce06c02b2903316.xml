@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Delete Emergency Contacts in My Info" skipped="0" tests="1" time="29.68" timestamp="2025-01-04 01:27:49"><testcase name="User successfully deletes an emergency contact"><failure message="Record with value Sunil is not on the table. Actual: 0" type="java.lang.AssertionError">Record with value Sunil is not on the table. Actual: 0</failure><system-err>Record with value Sunil is not on the table. Actual: 0&#13;
+steps.CommonSteps.checkIfTheRecordIsAvailable(CommonSteps.java:54)&#13;
+tests.AddEmergencyContact.theUserShouldSeeARecordWithAs(AddEmergencyContact.java:30)&#13;
+✽.the user should see a record with "Sunil"(classpath:features/DeleteEmergencyContact.feature:18)&#13;
+</system-err></testcase></testsuite>

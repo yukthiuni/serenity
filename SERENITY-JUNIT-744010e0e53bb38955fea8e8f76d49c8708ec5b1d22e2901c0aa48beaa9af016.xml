@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Edit Job" skipped="0" tests="1" time="445.83" timestamp="2025-01-04 01:29:30"><testcase name="Edit the job title"><failure message="Not on the Job List page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveJobTitle/31" type="java.lang.AssertionError">Not on the Job List page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveJobTitle/31</failure><system-err>Not on the Job List page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveJobTitle/31&#13;
+pages.OrangeHrmJobListPage.verifyJobListPage(OrangeHrmJobListPage.java:35)&#13;
+pages.JobListPageSteps.verifyJoblistPage(JobListPageSteps.java:22)&#13;
+stepdefinitions.EditJobStepdefinition.user_is_directed_to_the_job_list_view_page(EditJobStepdefinition.java:49)&#13;
+✽.User is directed to the Job List View page(classpath:features/EditJob.feature:26)&#13;
+</system-err></testcase></testsuite>

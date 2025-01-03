@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Search Candidate" skipped="0" tests="1" time="36.33" timestamp="2025-01-04 01:32:14"><testcase name="Search available Candidate"><failure message="Could not find search drop down item" type="java.lang.AssertionError">Could not find search drop down item</failure><system-err>Could not find search drop down item&#13;
+pages.OrangeHrmCandidatesPage.verifySearchDropDownItemExists(OrangeHrmCandidatesPage.java:73)&#13;
+steps.CandidatesPageStepLibrary.verifySearchDropDownItemExists(CandidatesPageStepLibrary.java:48)&#13;
+tests.SearchCandidateStepDefinitions.user_see_the_dropdown_item(SearchCandidateStepDefinitions.java:21)&#13;
+✽.User see the "Nuwa333" "Kum333" dropdown item(classpath:features/SearchCandidate.feature:19)&#13;
+</system-err></testcase></testsuite>
